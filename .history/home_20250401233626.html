@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Daizzah Botoy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .wave {
+        display: inline-block;
+        animation: wave 2s infinite;
+        transform-origin: 70% 70%;
+      }
+      @keyframes wave {
+        0% {
+          transform: rotate(0.0deg);
+        }
+        10% {
+          transform: rotate(14.0deg);
+        }
+        20% {
+          transform: rotate(-8.0deg);
+        }
+        30% {
+          transform: rotate(14.0deg);
+        }
+        40% {
+          transform: rotate(-4.0deg);
+        }
+        50% {
+          transform: rotate(10.0deg);
+        }
+        60% {
+          transform: rotate(0.0deg);
+        }
+        100% {
+          transform: rotate(0.0deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="font-[Poppins] bg-gradient-to-b from-[#fdfbff] via-[#f5edf8] to-[#e9dbf1]">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/db_icon.png"
+            alt="DB Logo"
+            style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h1 class="text-5xl font-bold text-pink-600">
+            Hi <span class="wave">👋</span> I’m Daizzah Botoy
+          </h1>
+          <p class="text-lg text-gray-700 mt-3">
+            Computer Engineering Graduate &middot; Developer &middot; Creative Builder
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-start justify-center gap-10">
+          <!-- Left -->
+          <div class="space-y-6 max-w-xl">
+            <div class="bg-white bg-opacity-80 backdrop-blur rounded-lg shadow-lg p-6 text-left">
+              <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+              <p class="text-gray-800 leading-relaxed">
+                I'm passionate about designing and building innovative software solutions. With nearly two years of experience in programming and development, I specialize in
+                <span class="font-semibold text-purple-700">Python</span>,
+                <span class="font-semibold text-purple-700">Java</span>,
+                <span class="font-semibold text-purple-700">C++</span>, and more.
+              </p>
+              <p class="mt-4">
+                Let's create something great together! Reach out via
+                <a href="#contact" class="text-pink-600 underline font-medium">Contact Me</a>
+                for collaborations.
+              </p>
+            </div>
+            <div>
+              <a
+                href="DaizzahBotoyResume.pdf"
+                class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-gradient-to-r from-pink-400 to-purple-400 text-white shadow-md hover:shadow-lg hover:-translate-y-1 transition"
+                target="_blank"
+              >
+                <i class="fas fa-file-alt"></i> Resume
+              </a>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="flex flex-col items-center gap-6">
+            <a href="https://ca.linkedin.com/in/daizzah-botoy" target="_blank" class="profile-link relative">
+              <img
+                src="DaizzahBotoyPhoto.jpg"
+                alt="Your Picture"
+                class="rounded-lg max-w-xs shadow-lg hover:scale-105 transition"
+              />
+            </a>
+            <div class="bg-[#ece4ff] rounded-lg p-4 shadow-md">
+              <div class="flex flex-wrap justify-center gap-3">
+                <img src="assets/python.png" alt="Python" class="w-10 h-10" />
+                <img src="assets/git.png" alt="Git" class="w-10 h-10" />
+                <img src="assets/java.png" alt="Java" class="w-10 h-10" />
+                <img src="assets/c.png" alt="C" class="w-10 h-10" />
+                <img src="assets/kotlin.png" alt="Kotlin" class="w-10 h-10" />
+                <img src="assets/systemverilog.png" alt="SystemVerilog" class="w-10 h-10" />
+                <img src="assets/c++.png" alt="C++" class="w-10 h-10" />
+                <img src="assets/javascript.png" alt="JavaScript" class="w-10 h-10" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-6 text-sm text-gray-500">
+      &copy; 2025 Daizzah Botoy
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

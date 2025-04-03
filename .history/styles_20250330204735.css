@@ -1,0 +1,116 @@
+
+/* MAIN HTML & BODY SETUP */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    background: linear-gradient(0deg, #eae4f6, #f3f1f8);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER FIX */
+footer {
+    margin-top: auto;
+    padding: 1rem 0;
+    background-color: transparent !important;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #dedde3;
+    padding: 1.5rem 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #5a4b81;
+}
+
+/* TITLE & DESCRIPTION */
+.title-container, .description-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.title-name {
+    font-size: 4rem;
+}
+
+/* BUTTONS */
+.btn-lg {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #b9afd1;
+    border: 3px solid #9a8fb9;
+    color: #3c2c66;
+    transition: all 0.3s ease;
+}
+
+.btn-lg:hover {
+    background-color: #9a8fb9;
+    border-color: #5a4b81;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* CARD */
+.card {
+    background-color: #f7f5ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* EXPERIENCE AND ABOUT ME TITLES */
+.experience-title, #about-title {
+    color: #333;
+    text-shadow: none;
+}
+
+/* ABOUT ME SECTION */
+#about-me {
+    background-color: transparent;
+    padding: 50px 0;
+}
+
+.pink-box {
+    background: linear-gradient(60deg, #dcd6f7, #e8c7de, #dcd6f7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* BIO & GENERAL TEXT */
+.bio, .card-body, .short-description p {
+    color: #222;
+    line-height: 1.6;
+}
+
+/* CONTAINER TRANSPARENCY FIX */
+.container.my-5, .container {
+    background-color: transparent !important;
+}

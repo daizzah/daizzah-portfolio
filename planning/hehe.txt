@@ -1,0 +1,43 @@
+ideas
+
+- categories: about me, home/landing page (clicking the name), projects, skills, contact me
+
+about me:
+- include what school i went to
+- degree?
+- hobbies
+- achievements
+    - Dean’s Honour Roll (1st to 3rd year)
+- history
+    - started engineering in 2019
+    - i had a passion for programming and chose computer engineering in 2020
+    - got a 16 month long internship after my 3rd year in 2022
+    - going to graduate in november 2024
+
+skills:
+- add programming languages again
+- add other things i could use, like gitlab, jira, etc
+- python
+- c
+- java
+- kotlin
+- C++
+- HTML
+- CSS
+- React
+- Node.js
+- Django
+- SQL
+- docker
+- git
+- linux
+
+projects:
+- website for medical files encrypted
+- school work 
+	- IoT based smart parking system (prototype) 
+	- recipe app 
+	- verification - made a checker to verify that the thing works properly
+		- used system verilog to verify ?
+		- worked on verifying a 4x4 xswitch 
+    - 
