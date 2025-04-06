@@ -61,7 +61,7 @@
           </ul>
           <div class="nav-icons d-flex align-items-center">
             <a
-              href="https://github.com/daizzah"
+              href="https://github.com/yourgithub"
               target="_blank"
               class="nav-link px-2"
             >
@@ -125,12 +125,31 @@
             required
           ></textarea>
         </div>
-        <button type="submit" class="pretty-button">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
-      <div id="thank-you" class="custom-thanks fade-in" style="display: none">
+      <div
+        id="thank-you"
+        class="thank-you-message fade-in"
+        style="display: none"
+      >
         <h2>🎉 Thanks for reaching out!</h2>
         <p>I’ll get back to you as soon as I can.</p>
-        <button class="pretty-button" onclick="location.href='home.html'">
+        <button
+          onclick="location.href='home.html'"
+          class="btn btn-lg"
+          style="
+            margin-top: 1.5rem;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #e26f8f, #d198b7);
+            color: white;
+            padding: 0.7rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+          "
+          onmouseover="this.style.background='linear-gradient(135deg, #d45b78, #ba6e95)'"
+          onmouseout="this.style.background='linear-gradient(135deg, #e26f8f, #d198b7)'"
+        >
           ← Back Home
         </button>
       </div>
@@ -142,7 +161,7 @@
         © 2025 Daizzah Botoy ·
         <a
           class="footer-link"
-          href="https://github.com/daizzah"
+          href="https://github.com/yourgithub"
           target="_blank"
         >
           GitHub

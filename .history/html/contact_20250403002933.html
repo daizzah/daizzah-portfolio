@@ -61,7 +61,7 @@
           </ul>
           <div class="nav-icons d-flex align-items-center">
             <a
-              href="https://github.com/daizzah"
+              href="https://github.com/yourgithub"
               target="_blank"
               class="nav-link px-2"
             >
@@ -90,6 +90,7 @@
         action="https://formspree.io/f/mgvanerl"
         method="POST"
         class="contact-form fade-in"
+        id="contact-form"
       >
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
@@ -125,15 +126,8 @@
             required
           ></textarea>
         </div>
-        <button type="submit" class="pretty-button">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
-      <div id="thank-you" class="custom-thanks fade-in" style="display: none">
-        <h2>🎉 Thanks for reaching out!</h2>
-        <p>I’ll get back to you as soon as I can.</p>
-        <button class="pretty-button" onclick="location.href='home.html'">
-          ← Back Home
-        </button>
-      </div>
     </section>
 
     <!-- Footer -->
@@ -142,7 +136,7 @@
         © 2025 Daizzah Botoy ·
         <a
           class="footer-link"
-          href="https://github.com/daizzah"
+          href="https://github.com/yourgithub"
           target="_blank"
         >
           GitHub
@@ -161,7 +155,6 @@
     <!-- Scripts -->
     <script>
       const form = document.getElementById("contact-form");
-      const thanks = document.getElementById("thank-you");
 
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -175,7 +168,17 @@
 
         if (response.ok) {
           form.style.display = "none";
-          thanks.style.display = "block";
+
+          const thanks = document.createElement("div");
+          thanks.innerHTML = `
+            <div class="custom-thanks fade-in" style="text-align:center; padding:2rem;">
+              <h2>🎉 Thanks for reaching out!</h2>
+              <p>I’ll get back to you as soon as I can.</p>
+              <button onclick="location.href='home.html'" style="margin-top:1rem;">Back Home</button>
+            </div>
+          `;
+          document.querySelector("#contact").appendChild(thanks);
+
           confettiEffect();
         } else {
           alert("Oops! Something went wrong.");
@@ -186,20 +189,9 @@
         const script = document.createElement("script");
         script.src =
           "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
-        script.onload = () => {
-          confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
-        };
+        script.onload = () => confetti();
         document.body.appendChild(script);
       }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const fadeElements = document.querySelectorAll(".fade-in");
-        fadeElements.forEach((el, index) => {
-          setTimeout(() => {
-            el.classList.add("visible");
-          }, index * 150);
-        });
-      });
     </script>
   </body>
 </html>

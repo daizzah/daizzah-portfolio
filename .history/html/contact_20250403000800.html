@@ -29,7 +29,7 @@
       <div class="container">
         <a class="navbar-brand" href="home.html">
           <img
-            src="../assets/db-icon.png"
+            src="../assets/db_icon.png"
             alt="DB Logo"
             style="height: 50px; width: 50px; border-radius: 50%"
           />
@@ -61,7 +61,7 @@
           </ul>
           <div class="nav-icons d-flex align-items-center">
             <a
-              href="https://github.com/daizzah"
+              href="https://github.com/yourgithub"
               target="_blank"
               class="nav-link px-2"
             >
@@ -125,14 +125,26 @@
             required
           ></textarea>
         </div>
-        <button type="submit" class="pretty-button">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
-      <div id="thank-you" class="custom-thanks fade-in" style="display: none">
-        <h2>🎉 Thanks for reaching out!</h2>
-        <p>I’ll get back to you as soon as I can.</p>
-        <button class="pretty-button" onclick="location.href='home.html'">
-          ← Back Home
-        </button>
+
+      <!-- Thank You Message (initially hidden) -->
+      <div
+        id="thank-you"
+        class="thank-you-message fade-in"
+        style="display: none"
+      >
+        <h3>Thanks for reaching out 💜</h3>
+        <p>I'll get back to you as soon as I can!</p>
+      </div>
+
+      <div
+        id="thank-you"
+        class="fade-in"
+        style="display: none; text-align: center; margin-top: 2rem"
+      >
+        <h3>Thanks for reaching out!</h3>
+        <p>I’ll get back to you as soon as I can 😊</p>
       </div>
     </section>
 
@@ -142,7 +154,7 @@
         © 2025 Daizzah Botoy ·
         <a
           class="footer-link"
-          href="https://github.com/daizzah"
+          href="https://github.com/yourgithub"
           target="_blank"
         >
           GitHub
@@ -160,44 +172,63 @@
 
     <!-- Scripts -->
     <script>
-      const form = document.getElementById("contact-form");
-      const thanks = document.getElementById("thank-you");
-
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        const formData = new FormData(form);
-
-        const response = await fetch(form.action, {
-          method: form.method,
-          body: formData,
-          headers: { Accept: "application/json" },
-        });
-
-        if (response.ok) {
-          form.style.display = "none";
-          thanks.style.display = "block";
-          confettiEffect();
-        } else {
-          alert("Oops! Something went wrong.");
-        }
-      });
-
-      function confettiEffect() {
-        const script = document.createElement("script");
-        script.src =
-          "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
-        script.onload = () => {
-          confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
-        };
-        document.body.appendChild(script);
-      }
-
       document.addEventListener("DOMContentLoaded", () => {
         const fadeElements = document.querySelectorAll(".fade-in");
         fadeElements.forEach((el, index) => {
           setTimeout(() => {
             el.classList.add("visible");
           }, index * 150);
+        });
+
+        // Formspree logic
+        const form = document.getElementById("contact-form");
+        const thankYou = document.getElementById("thank-you");
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+
+          fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          }).then((response) => {
+            if (response.ok) {
+              form.style.display = "none";
+              thankYou.style.display = "block";
+            } else {
+              alert("Oops! Something went wrong. Please try again later.");
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contact-form");
+        const thankYou = document.getElementById("thank-you");
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const formData = new FormData(form);
+
+          const res = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (res.ok) {
+            form.style.display = "none";
+            thankYou.style.display = "block";
+          } else {
+            alert("Oops! Something went wrong.");
+          }
         });
       });
     </script>

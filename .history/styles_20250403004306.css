@@ -950,36 +950,3 @@ h4,
 .back-home-btn:hover {
   background: linear-gradient(135deg, #d45b78, #ba6e95);
 }
-
-.hover-shadow:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.pretty-button {
-  font-weight: 600;
-  background: linear-gradient(135deg, #e26f8f, #d198b7);
-  border: none;
-  border-radius: 50px;
-  color: white;
-  padding: 0.7rem 2rem;
-  margin-top: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  font-size: 1.1rem;
-  text-align: center;
-  text-decoration: none;
-}
-
-.pretty-button:hover {
-  background: linear-gradient(135deg, #d45b78, #ba6e95);
-  transform: translateY(-2px);
-  color: white;
-}
-
-.pretty-button.small {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
