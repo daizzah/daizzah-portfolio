@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.forEach((element) => {
     const text = element.textContent;
-    const letters = [...text]; // Use spread operator to handle all characters, including emojis
+    const letters = [...text];
 
     element.innerHTML = letters
       .map((letter) => {
         const char = letter === " " ? "&nbsp;" : letter;
         const span = `<span style="animation-delay: ${totalDelay}s">${char}</span>`;
-        totalDelay += 0.05; // Increment delay for each letter
+        totalDelay += 0.05;
         return span;
       })
       .join("");
