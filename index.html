@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <meta charset="UTF-8" />
   <meta content="width=device-width,initial-scale=1" name="viewport" />
@@ -15,11 +15,11 @@
     type="image/png"
   />
   <meta
-    content="Portfolio of Daizzah Botoy, a Computer Engineering grad and Software Engineer focused on clean, efficient web and embedded systems."
+    content="Portfolio of Daizzah Botoy, a Computer Engineering grad focused on clean, efficient software—web, embedded, and desktop."
     name="description"
   />
   <meta content="Daizzah Botoy" name="author" />
-  <meta content="Daizzah Botoy | Software Engineer" property="og:title" />
+  <meta content="Daizzah Botoy | Software Developer" property="og:title" />
   <meta
     content="Explore Daizzah's software projects, engineering background, and passion for clean, efficient code."
     property="og:description"
@@ -41,14 +41,26 @@
     rel="stylesheet"
   />
   <link href="styles.css" rel="stylesheet" />
+  <link href="styles-mobile.css" rel="stylesheet" media="(max-width: 768px)" />
   <header>
     <nav
-      class="bg-light navbar navbar-expand-lg navbar-light shadow-sm sticky-top"
+      class="bg-light navbar navbar-expand-lg navbar-light shadow-sm fixed-top"
     >
       <div class="container">
         <a href="index.html" class="navbar-brand">
           <img alt="DB Logo" src="assets/db-icon.png" class="brand-logo" />
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="gap-3 ms-auto navbar-nav">
             <li class="nav-item">
@@ -103,7 +115,7 @@
                 </div>
               </div>
               <p class="roll-in hero-subtitle">
-                Software Engineer · Computer Engineering Grad
+                Software Developer · EIT · Computer Engineering Grad
               </p>
             </div>
           </div>
@@ -115,14 +127,13 @@
                   I’m a Computer Engineering grad focused on building
                   thoughtful, efficient software. I’ve worked on web, desktop,
                   and embedded projects using tools like
-                  <span class="highlight">Python</span>
-                  ,
-                  <span class="highlight">Java</span>
-                  , and
-                  <span class="highlight">C++</span>
-                  . Whether I’m designing UI or working on backend systems, I
-                  care about writing clean, maintainable code that’s reliable
-                  and easy to work with.
+                  <span class="highlight">Python,</span>
+                  <span class="highlight">Java,</span>
+                  and
+                  <span class="highlight">C++.</span>
+                  Whether I’m designing UI or working on backend systems, I care
+                  about writing clean, maintainable code that’s reliable and
+                  easy to work with.
                 </p>
                 <p>
                   I’m currently open to new opportunities, feel free to reach
@@ -152,16 +163,6 @@
                 >
                   📄 View Resume
                 </a>
-                <div class="alt-resume-links">
-                  <span>also available:</span>
-                  <a href="assets/daizzah-resume-frontend.pdf" target="_blank">
-                    Frontend
-                  </a>
-                  <span>·</span>
-                  <a href="assets/daizzah-resume-embedded.pdf" target="_blank">
-                    Embedded
-                  </a>
-                </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,285 @@
+/* Mobile-only overrides – applied at 768px and below */
+
+/* Hero / Home page – center content */
+#hero .title-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#hero .hero-content-wrapper {
+  width: 100%;
+  align-items: center;
+}
+#hero .description-container {
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100%;
+  align-self: stretch;
+}
+#hero .hero-left {
+  align-items: center;
+  text-align: center;
+}
+#hero .description-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100%;
+}
+#hero .short-description {
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box;
+}
+#hero .profile-section {
+  align-items: center;
+  width: 100%;
+  align-self: stretch;
+}
+#hero .profile-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#hero .profile-picture {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#hero .resume-button-wrap {
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+#hero .languages-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 900px;
+}
+#hero .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hero-hi {
+  font-size: 1.8rem;
+}
+.hero-name {
+  font-size: 2.2rem;
+}
+.hero-subtitle {
+  font-size: 1rem;
+}
+.short-description {
+  font-size: 1.1rem !important;
+  padding: 0.6rem 1rem 0.8rem !important;
+}
+
+/* Pretty headers & section titles */
+.pretty-header {
+  font-size: 1.6rem !important;
+  padding: 0.75rem 1rem !important;
+}
+.section-header {
+  font-size: 1.4rem !important;
+  padding: 0.6rem 1rem !important;
+}
+.fun-facts-heading {
+  font-size: 1.4rem !important;
+}
+
+/* About page hero */
+#hero .hero-name {
+  font-size: 1.8rem;
+}
+#hero .lead {
+  font-size: 1rem;
+}
+
+/* Experiences – stack cards vertically, full-width images */
+.card .card-body,
+.card .d-flex .card-body {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.card .d-flex,
+.card .align-items-center,
+.card .row {
+  flex-direction: column !important;
+}
+.card .d-flex img,
+.card .align-items-center img,
+.card img {
+  max-width: 100% !important;
+  width: 100% !important;
+  flex: none !important;
+  margin-right: 0 !important;
+  margin-bottom: 1rem;
+}
+.card .col-md-7 h3 img,
+.card .col-md-7 h4 img {
+  width: auto !important;
+  max-width: none !important;
+  height: 1.7em !important;
+  margin-bottom: 0 !important;
+  vertical-align: middle;
+  object-fit: contain;
+}
+.card .col-md-5,
+.card .col-md-7 {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0.5rem !important;
+}
+.card .text-center.col-md-5 img {
+  margin-bottom: 0.5rem;
+}
+.project-point {
+  font-size: 1rem !important;
+}
+
+/* Contact form */
+.contact-form {
+  padding: 1.5rem !important;
+  margin: 2rem 0.5rem 0 !important;
+}
+.custom-thanks h2 {
+  font-size: 1.5rem;
+}
+.custom-thanks p {
+  font-size: 1rem;
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  bottom: 1.2rem;
+  right: 1.2rem;
+}
+
+/* Footer */
+.site-footer {
+  font-size: 0.8rem;
+  padding: 1.5rem 0.5rem;
+}
+.site-footer p {
+  line-height: 1.6;
+}
+
+/* Navbar – mobile overlay style */
+.navbar {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.navbar-toggler {
+  border: 1px solid rgba(90, 75, 129, 0.25);
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  box-shadow: none;
+  background: transparent !important;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 2px rgba(180, 129, 162, 0.3);
+}
+.navbar-toggler-icon {
+  width: 1.2em;
+  height: 1.2em;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(90, 75, 129, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 12px 12px;
+  padding: 0.75rem 1rem 1rem;
+  margin: 0 0.5rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.navbar-collapse .navbar-nav {
+  margin-top: 0;
+  margin-left: 0 !important;
+  gap: 0.35rem;
+}
+.navbar-collapse .nav-item .nav-link {
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  background: rgba(232, 223, 243, 0.6);
+  border: 1px solid rgba(180, 129, 162, 0.2);
+  color: #333;
+  display: block;
+  text-align: center;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.navbar-collapse .nav-item .nav-link:hover,
+.navbar-collapse .nav-item .nav-link:active {
+  background: rgba(180, 129, 162, 0.2);
+  border-color: rgba(180, 129, 162, 0.4);
+  color: #2b2b2b;
+}
+.nav-icons {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 1px solid rgba(180, 129, 162, 0.2);
+  gap: 1rem;
+  justify-content: center;
+  display: flex;
+}
+.navbar-collapse .nav-icons a {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(232, 223, 243, 0.6);
+  border: 1px solid rgba(180, 129, 162, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.navbar-collapse .nav-icons a:hover {
+  background: rgba(180, 129, 162, 0.25);
+  transform: scale(1.05);
+}
+.navbar-collapse .nav-icons i {
+  font-size: 1.25rem;
+}
+
+/* Pink box & fun facts */
+.pink-box {
+  padding: 1.5rem 1rem !important;
+}
+.fun-facts-box {
+  padding: 1rem 1.25rem !important;
+}
+.fun-facts-stacked li {
+  font-size: 1rem !important;
+}
+
+/* 404 page */
+#error-wrapper h1 {
+  font-size: 3.5rem;
+}
+#error-wrapper p {
+  font-size: 1.1rem;
+}
